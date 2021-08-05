@@ -10,7 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Person : NSObject
-
+{   
+    NSInteger _width;
+}
 @property (nonatomic, assign) NSInteger age;
 
 @end

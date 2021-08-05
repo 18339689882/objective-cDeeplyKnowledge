@@ -40,13 +40,13 @@
     NSLog(@"person1 元类对象 %p", object_getClass(object_getClass(self.person1)));
     NSLog(@"person2 元类对象 %p", object_getClass(object_getClass(self.person2)));
 
-    self.person1.age = 10;
+    self.person1->_width = 10; // ！！ 不发生kvo监听
 }
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    self.person1.age = 10;
-    self.person2.age = 20;
+//    self.person1.age = 10;
+//    self.person2.age = 20;
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
