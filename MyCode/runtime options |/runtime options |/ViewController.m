@@ -32,7 +32,8 @@ typedef enum {
 //    [self setOptions:WSOptionsOne + WSOptionsTwo + WSOptionsThree]; // ob0111
 //    [self setOptions:WSOptionsOne | WSOptionsTwo | WSOptionsThree]; // ob0111
     
-    [self runtimeObjc_msg_send_test];
+//    [self runtimeObjc_msg_send_test];
+    [self is_Class];
 }
 
 /**
@@ -56,7 +57,32 @@ ob  0001
 
 -(void)runtimeObjc_msg_send_test{
     WSPerson *ws = [[WSPerson alloc] init];
-    [ws test];
+//    [ws test];
+}
+
+-(void)is_Class{
+    WSPerson *person = [[WSPerson alloc] init];
+    if ([person isKindOfClass:[WSPerson class]]) {
+        NSLog(@"- isKindOfClass");
+    }
+    if ([person isKindOfClass:[NSObject class]]) {
+        NSLog(@"- NSObject isKindOfClass");
+    }
+    
+    if ([person isMemberOfClass:[WSPerson class]]) {
+        NSLog(@"- isMemberOfClass");
+    }
+    if ([person isMemberOfClass:[NSObject class]]) {
+        NSLog(@"- NSObject isMemberOfClass");
+    }
+    
+    if ([WSPerson isMemberOfClass:[WSPerson class]]) {
+        NSLog(@"+ isMemberOfClass");
+    }
+    
+    if ([WSPerson isKindOfClass:[WSPerson class]]) {
+        NSLog(@"+ isKindOfClass");
+    }
 }
 
 @end

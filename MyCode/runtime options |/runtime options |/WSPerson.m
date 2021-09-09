@@ -10,7 +10,30 @@
 #import <objc/runtime.h>
 @implementation WSPerson
 
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        // objc_msgSend(self, @selector(class))
+        // 从自身类方法开始查找方法，然后再往上找
+        NSLog(@"[self class] = %@", [self class]);// WSPerson 打印自身类
+        // objc_msgSendSuper({self, [父类class])}, @selector(class)
+        // 从父类方法开始查找方法，然后再往上找
+        NSLog(@"[super class] = %@", [super class]);// WSPerson 打印自身类
+        
+        // superclass 就是得到父类，self  和  super 取决于从自身还是从父类开始查找
+        NSLog(@"[self superclass] = %@", [self superclass]); // NSObject 打印父类
+        NSLog(@"[super superclass] = %@", [super superclass]); // NSObject 打印父类
+    }
+    return self;
+}
+// 伪代码实现
+- (Class)class{
+    return object_getClass(self);// 方法的返回值取决于方法调用者/消息接收者
+}
+- (Class)superclass{
+    return class_getSuperclass(object_getClass(self)); // 得到 self 的父类
+}
 /// 动态解析阶段
 //+ (BOOL)resolveInstanceMethod:(SEL)sel{
 //    if (sel == @selector(test)) {
@@ -35,8 +58,8 @@
 // 2.
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
     if (aSelector == @selector(test)) {
-        return nil;
-//        return [NSMethodSignature signatureWithObjCTypes:"V@:"];
+//        return nil;
+        return [NSMethodSignature signatureWithObjCTypes:"V@:"];
     }
     return [super methodSignatureForSelector:aSelector];;
 }
