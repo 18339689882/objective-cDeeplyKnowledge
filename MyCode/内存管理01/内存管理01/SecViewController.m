@@ -23,6 +23,9 @@
 @end
 
 @implementation SecViewController
+
+static NSString *code;
+
 - (void)dealloc
 {
     NSLog(@"__debug %s, %@",__func__, self);
@@ -34,6 +37,10 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
 //    [self testCADisplayLinkAndTimer];
 //    [self GCDTimer];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+    NSString *code = [[NSString alloc] init];
+#pragma clang diagnostic pop
     
 }
 

@@ -20,6 +20,11 @@ int main(int argc, char * argv[]) {
         NSLog(@"%d", [proxy isKindOfClass:[ViewController class]]);// 1
         NSLog(@"%d", [proxy1 isKindOfClass:[ViewController class]]);// 左边对象是否右边对象类型，或者右边类型的子类 // 0
         
+        NSString *str1 = @"123";
+        NSString *str2 = @"123";
+        NSString *str3 = @"456";
+        NSLog(@"%p , %p, %p", str1, str2, str3);
+        
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
