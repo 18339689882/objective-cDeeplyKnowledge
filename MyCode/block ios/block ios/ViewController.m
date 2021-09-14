@@ -30,6 +30,12 @@ typedef void (^WSBlock)(void);
     };
     block();
     
+    [self testPersonBlock];
+}
+
+- (void)testPersonBlock{
+    WSPerson *person = [[WSPerson alloc] init];
+    person.testBlock();
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

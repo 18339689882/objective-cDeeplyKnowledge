@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "SecViewController.h"
+#import "TestModel.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
+    NSLog(@"viewDidLoad");
+    TestModel *model = [[TestModel alloc] init];
 }
+
+- (void)viewWillAppear:(BOOL)animated{
+    NSLog(@"viewWillAppear");
+    [super viewWillAppear:animated];
+}
+
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     SecViewController *vc = [[SecViewController alloc] init];

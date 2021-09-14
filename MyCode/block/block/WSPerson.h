@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *name;
 
+@property (nonatomic, copy) void(^testBlock)();
+
 @end
 
 NS_ASSUME_NONNULL_END

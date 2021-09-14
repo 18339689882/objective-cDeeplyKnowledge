@@ -16,6 +16,15 @@
 		04572B0F26E772F5004F53C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04572B0E26E772F5004F53C4 /* main.m */; };
 		04572B1826E77323004F53C4 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04572B1726E77323004F53C4 /* SecViewController.m */; };
 		04572B1C26E7767D004F53C4 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04572B1B26E7767D004F53C4 /* TestModel.m */; };
+		04A2B78726EEFD180019185C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04572B0326E772F3004F53C4 /* ViewController.m */; };
+		04A2B78826EEFD180019185C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04572AFD26E772F3004F53C4 /* AppDelegate.m */; };
+		04A2B78926EEFD180019185C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04572B0E26E772F5004F53C4 /* main.m */; };
+		04A2B78A26EEFD180019185C /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04572B1B26E7767D004F53C4 /* TestModel.m */; };
+		04A2B78B26EEFD180019185C /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04572B1726E77323004F53C4 /* SecViewController.m */; };
+		04A2B78C26EEFD180019185C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04572B0026E772F3004F53C4 /* SceneDelegate.m */; };
+		04A2B78F26EEFD180019185C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04572B0A26E772F5004F53C4 /* LaunchScreen.storyboard */; };
+		04A2B79026EEFD180019185C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04572B0826E772F5004F53C4 /* Assets.xcassets */; };
+		04A2B79126EEFD180019185C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04572B0526E772F3004F53C4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +44,19 @@
 		04572B1726E77323004F53C4 /* SecViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
 		04572B1A26E7767D004F53C4 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		04572B1B26E7767D004F53C4 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		04A2B79526EEFD180019185C /* WSUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A2B79626EEFD180019185C /* UIKit 对象的内存管理 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UIKit 对象的内存管理 copy-Info.plist"; path = "/Users/mac/Documents/OC底层和逆向/MyCode/UIKit 对象的内存管理 17分享相关/UIKit 对象的内存管理 copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		04572AF626E772F3004F53C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A2B78D26EEFD180019185C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +71,7 @@
 			children = (
 				04572AFB26E772F3004F53C4 /* UIKit 对象的内存管理 */,
 				04572AFA26E772F3004F53C4 /* Products */,
+				04A2B79626EEFD180019185C /* UIKit 对象的内存管理 copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				04572AF926E772F3004F53C4 /* UIKit 对象的内存管理.app */,
+				04A2B79526EEFD180019185C /* WSUIKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +142,23 @@
 			productReference = 04572AF926E772F3004F53C4 /* UIKit 对象的内存管理.app */;
 			productType = "com.apple.product-type.application";
 		};
+		04A2B78526EEFD180019185C /* WSUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A2B79226EEFD180019185C /* Build configuration list for PBXNativeTarget "WSUIKit" */;
+			buildPhases = (
+				04A2B78626EEFD180019185C /* Sources */,
+				04A2B78D26EEFD180019185C /* Frameworks */,
+				04A2B78E26EEFD180019185C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WSUIKit;
+			productName = "UIKit 对象的内存管理";
+			productReference = 04A2B79526EEFD180019185C /* WSUIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				04572AF826E772F3004F53C4 /* UIKit 对象的内存管理 */,
+				04A2B78526EEFD180019185C /* WSUIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +199,16 @@
 				04572B0C26E772F5004F53C4 /* LaunchScreen.storyboard in Resources */,
 				04572B0926E772F5004F53C4 /* Assets.xcassets in Resources */,
 				04572B0726E772F3004F53C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A2B78E26EEFD180019185C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A2B78F26EEFD180019185C /* LaunchScreen.storyboard in Resources */,
+				04A2B79026EEFD180019185C /* Assets.xcassets in Resources */,
+				04A2B79126EEFD180019185C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +225,19 @@
 				04572B1C26E7767D004F53C4 /* TestModel.m in Sources */,
 				04572B1826E77323004F53C4 /* SecViewController.m in Sources */,
 				04572B0126E772F3004F53C4 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A2B78626EEFD180019185C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A2B78726EEFD180019185C /* ViewController.m in Sources */,
+				04A2B78826EEFD180019185C /* AppDelegate.m in Sources */,
+				04A2B78926EEFD180019185C /* main.m in Sources */,
+				04A2B78A26EEFD180019185C /* TestModel.m in Sources */,
+				04A2B78B26EEFD180019185C /* SecViewController.m in Sources */,
+				04A2B78C26EEFD180019185C /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 436QBZU98P;
 				INFOPLIST_FILE = "UIKit 对象的内存管理/Info.plist";
@@ -337,9 +399,48 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 436QBZU98P;
 				INFOPLIST_FILE = "UIKit 对象的内存管理/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UIKitswsPersonalCenter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04A2B79326EEFD180019185C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 436QBZU98P;
+				INFOPLIST_FILE = "UIKit 对象的内存管理 copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UIKitswsPersonalCenter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04A2B79426EEFD180019185C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 436QBZU98P;
+				INFOPLIST_FILE = "UIKit 对象的内存管理 copy-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,6 +468,15 @@
 			buildConfigurations = (
 				04572B1326E772F5004F53C4 /* Debug */,
 				04572B1426E772F5004F53C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A2B79226EEFD180019185C /* Build configuration list for PBXNativeTarget "WSUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A2B79326EEFD180019185C /* Debug */,
+				04A2B79426EEFD180019185C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
