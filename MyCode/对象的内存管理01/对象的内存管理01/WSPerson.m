@@ -22,7 +22,7 @@
 }
 
 -(void)setDog:(WSDog *)dog{
-    if (_dog != dog) {
+    if (_dog != dog) {// 
         [_dog release];
         _dog = [dog retain];
     }
